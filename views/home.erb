@@ -1,0 +1,86 @@
+<h1> Signed In! </h1>
+
+<h3>Hello..</h3>
+<%= current_user.email %>
+
+<%= session.inspect %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% if false %>
+	This was from an older lesson
+	<% 10.times do %>
+		<b> 
+			The Planet is 'SPLODIN 
+		</b>
+	<% end %>	
+
+	<%= "Hey man" %>
+
+	<% assigned_name = ["Fred", "Sue", "Betty", "Billy"] %>
+
+	<ul>
+	<% assigned_name.each do |name| %>
+		<li>
+			<a href="http://www.google.com?q=<%= name %>"><%= name %></a>
+		</li>
+		<% end %>
+	</ul>
+
+	<% assigned_name = ["Fred", "Sue", "Betty", "Billy"] %>
+
+	<ul>
+	<% assigned_name.each do |name| %>
+		<li>
+		<b>
+			puts name
+		</b>
+		</li>
+		<% end %>
+	</ul>
+
+	<% nav_routes = ["home", "greeting", "bye"] %>
+	<nav>
+		<ul>
+		<% nav_routes.each do |route| %>
+			<li>
+				<a href="/<%= route %>"><%= route %></a>
+			</li>
+			<% end %>
+		</ul>
+	</nav>
+
+	<body>
+		some content
+	</body>	
+
+
+	*/ homework - when moving files into new folder save as .erb /*
+
+<% end %>
