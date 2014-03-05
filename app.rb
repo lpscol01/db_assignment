@@ -5,8 +5,12 @@ require "rack-flash"
 
 #Settings
 
-set :database, "sqlite3:///test_app.sqlite3"
+configure(:development) {
+ set :database, "sqlite3:///test_app.sqlite3"
+}
+
 set :sessions, true
+set :environment, :development
 use Rack::Flash, :sweep => true
 
 Dir['./*.rb', ',/models/*.rb'].each{ |f| require f }
